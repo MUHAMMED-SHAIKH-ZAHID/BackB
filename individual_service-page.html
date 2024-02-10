@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgGray: "#B5B7B8",
+              cardcolor: " rgba(255, 255, 255, 0.034);",
+            },
+          },
+        },
+      };
+    </script>
+     <!-- swiper js cdn -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="mx-auto " >
+    <section class="container md:mt-6 mt-2 lg:w-11/12 mx-auto" >
+      <nav class="pt-4 pb-4 md:mx-auto mx-2 flex justify-between">
+        <div class="flex items-center p-2 md:p-0">
+
+          <img
+            src="./assets/logo/company-logo.svg"
+            alt=""
+            class="md:w-[8rem] w-[5rem]"
+          />
+        </div>
+        <div class="flex items-center h-full p-2 md:p-0 ">
+          <img src="./assets/logo/hamburger.svg" class="md:w-10 w-6" alt="">
+        </div>
+      </nav>
+    </section>
+
+    <section
+      class="container lg:w-11/12 mx-auto mt-10 flex flex-col gap-6 p-4 lg:p-0"
+    >
+    <div class="flex gap-2 items-center">
+      <div class="dot"></div>
+      <p class="text-sm text-gray-500 uppercase">
+         web development / <span class="text-gray-300">single page website</span>
+      </p>
+    </div>
+   
+      <ul class="flex gap-2">
+        <li></li>
+          <button
+            class="tab-button active-tab text-lg font-semibold lg:px-8 lg:py-2 lg px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('singlePage', this)"
+          >
+            Single Page
+          </button>
+        </li>
+        <li class="">
+          <button
+            class="tab-button text-lg font-semibold  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('foodDeliverey', this)"
+          >
+            Food Delivery
+          </button>
+        </li>
+        <li class="">
+          <button
+            class="tab-button text-lg font-semibold lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('portfolio', this)"
+          >
+            Portfolio
+          </button>
+        </li>
+        <li class=" ">
+          <button
+            class="tab-button text-lg font-semibold  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('ecommerce', this)"
+          >
+            Ecommerce
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <div class="tab-content flex flex-col" id="singlePage">
+      <section
+        class="lg:grid grid-cols-[3fr,2fr] lg:w-11/12 container md:mx-auto mx-2   lg:mt-16 items-center p-3 lg:p-0"
+      >
+        <div class="  justify-end h-full items-end  grid  ">
+          <div class="leading-[4rem] font-[ClashGrotesk-Regular]">
+
+            <div class="h2-color text-[2rem] md:text-[4.8rem] flex">Innovation Unleashed</div>
+            <div class="text-[2rem] md:text-[4.8rem] font-medium"> Showcasing our work and stories</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:pl-10 mt-10 md:mt-10  gap-4 md:w-[30rem]">
+          <p class="lg:text-lg text-sm text-gray-400 ">
+            Founded in 2019 by five friends driven by passion, our tech company
+            has rapidly evolved. We've expanded our innovative services to 13+
+            countries, successfully completing 400+ projects.
+          </p>
+
+          <p class="text-md text-gray-400">
+            Time Frame: 3 to 5 months 
+          </p>
+          <p class="text-md text-gray-400">Cost: 50k - 300k</p>
+          <div class="flex gap-8 items-center cursor-pointer mt-4">
+            <p>VIEW OUR SAMPLES</p>
+            <div class="w-20 border border-gray-200"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="">
+
+      </div>
+      <section
+        class="container lg:w-11/12 md:mx-auto mx-2  rounded-full mdmt-12 p-4 lg:p-0"
+      >
+        <img src="./assets/images/img1.png" alt="" class="w-full" />
+      </section>
+      <div class="card lg:w-11/12 md:mx-auto mx-2  mt-12 p-4 md:p-10">
+        <div class="flex justify-between md:mt-3 mt-5">
+          <div class="text-[.8rem] md:text-xs text-gray-400 pl-5 md:pl-0   flex gap-2 items-center">
+            <div class="dot"></div>
+            <p>WORKS</p>
+          </div>
+          <div class="">
+            
+            <p class="md:text-xs hidden md:block text-gray-400 text-[.6rem]">
+              ITS ALL ABOUT PEOPLE, WHO YOU ARE WITH
+            </p>
+          </div>
+        </div>
+        <section class="lg:container md:px-10 px-2 ">
+
+          <div class="lg:grid grid-cols-2 md:mt-12 mt-5 px-2">
+            <div class="grid h-full items-end ">
+
+              <div class="h2-color md:text-[5.5rem] text-[3rem] font-[ClashGrotesk-Regular]">Our Works</div>
+            </div>
+            <div class="flex flex-col items-end  md:w-[36rem] md:pl-8 ">
+              <div class="text-gray-400 md:text-xl md:text-[5rem] text-[1rem]   leading-[1.5rem]  ">
+                Founded in 2019 by five friends driven by passion, our tech company
+                has rapidly evolved. We've expanded our innovative services to 13+
+                countries, successfully completing 400+ projects.
+              </div>
+    
+            
+            </div>
+          </div>
+        
+          
+          <section
+          class="grid  md:grid-cols-2 py-2 md:pt-14 pt-5 gap-y-10 gap-x-5 "
+          >
+          <div class="product-card  rounded-full">
+            <img
+              src="./assets/images/Rectangle 240.png"
+              alt=""
+              class="w-full object-cover"
+              />
+            <div class="px-6 py-10">
+              <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
+  
+              <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
+            </div>
+          </div>
+          <div class="product-card  rounded-xl">
+            <img
+            src="./assets/images/Rectangle 240 (1).png"
+            alt=""
+            class="w-full object-cover"
+          />
+           <div class="px-6 py-10">
+              <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
+  
+              <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
+            </div>
+        </div>
+
+        <div class="product-card  rounded-xl">
+          <img
+            src="./assets/images/Rectangle 240 (2).png"
+            alt=""
+            class="w-full object-cover"
+            />
+            <div class="px-6 py-10">
+              <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
+  
+              <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
+            </div>
+        </div>
+        
+        <div class="product-card  rounded-xl">
+          <img
+          src="./assets/images/Rectangle 240 (3).png"
+          alt=""
+            class="w-full object-cover"
+          />
+          <div class="px-6 py-10">
+            <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
+
+            <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
+          </div>
+        </div>
+
+        
+      </section>
+    </section>
+    </div>
+    </div>
+
+    
+    <div class="tab-content" id="foodDeliverey" style="display: none">
+      <div class="lg:w-11/12">Food delivery</div>
+    </div>
+
+    <div class="tab-content" id="portfolio" style="display: none">
+      <div class="flex gap-16">Portfolio</div>
+    </div>
+
+
+    <div class="tab-content" id="ecommerce" style="display: none">
+      <div class="flex gap-16">ecommerce</div>
+    </div>
+
+    <!-- Footer -->
+    <section class=" lg:w-11/12 container mx-auto my-6 md:py-10   card md:p-10 md:p-5 p-4">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./assets/logo/client-logo/VI.png" class="md:h-[2rem] h-[1.5rem]" alt="slide"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/DohaCollege.png" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/Allyou.png" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/VI.png" alt="" class="h-[2rem] h-[1.5rem]"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+    </section>
+
+     <!-- Footer Section Start Point -->
+
+    <div class="mx-auto py-10  bg-black  ">
+      <div class="swiper2">
+        <div class="swiper-wrapper font-6xl">
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class=" bg-white  md:pb-2 md:pt-6 pt-3 ">
+      <div class="text-xs md:text-[.6rem]  text-gray-600 mt-3 md:px-14 md:p-6 p-2 flex md:gap-2 items-center">
+        <div class="dot text-black md:bg-black "></div>
+        <p class="uppercase ">
+          Share your creative ideas with us and get back beautiful designs that
+          impress and engage.
+        </p>
+      </div>
+      <div class="flex gap-1 items-center md:px-14 p-4 md:py-14 py-6 md:gap-10 ">
+      <h1 class=" md:font-semibold md:text-[4.8rem] text-black flex  ">Lets Start a Project   </h1>
+      <img src="./assets/logo/icons8-arrow-upper-right-48.png" alt="" class=" md:w-16 w-5" />
+    
+      </div>
+      <hr class="mt-5 border-t border-gray-400">
+            <div class="flex justify-between md:pt-8 pt-4 md:px-14 px-6 pb-6">
+
+        <div class="">
+          <div class="text-black  text-[.6rem] md:text-[1.1rem] text-gray-600">Designed and Developed by <span class="text-gray-800 text-[.8rem] md:text-[1.3rem] font-medium"> Dreamers ❤️</span> </div>
+        </div>
+        <div class="">
+
+          <div class="flex md:gap-4 gap-1 text-black ">
+            <img class="md:w-6 w-3 " src="./assets/logo/brand-logo/whatsapp.svg"  alt="gg" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/instagram.svg" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/linkedin.png" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/behance.png" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/dribble.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!-- Swiper Js -->
+         <!-- swiper cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+     <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 5, // Number of slides per view (adjust as needed)
+        spaceBetween: 10, // Space between each slide
+        loop: true, // Enable looping
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper2", {
+        // Optional parameters
+        slidesPerView: 1, // Number of slides per view (adjust as needed)
+        spaceBetween: 20, // Space between each slide
+        loop: true, // Enable looping
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 0, // Delay between slides in milliseconds (adjust as needed)
+          disableOnInteraction: false, // Continue sliding even after user interaction
+        },
+
+        speed: 20000,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+
+    <script>
+      function showTab(tabId, button) {
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function (tab) {
+          tab.style.display = "none";
+        });
+
+        var buttons = document.querySelectorAll(".tab-button");
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active-tab");
+        });
+
+        document.getElementById(tabId).style.display = "flex";
+
+        button.classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

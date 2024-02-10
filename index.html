@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgGray: "#B5B7B8",
+              cardcolor: " rgba(255, 255, 255, 0.034);",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  </head>
+  <body class="mx-auto">
+    <section class="container md:mt-6 mt-2 mx-3 lg:w-11/12 mx-auto">
+      <nav class="pt-4 pb-4  mx-2 flex md:mx-5 lg:mx-10 justify-between">
+        <div class="flex items-center p-2  md:p-0">
+
+          <img
+            src="./assets/logo/company-logo.svg"
+            alt=""
+            class="md:w-[10rem] w-[5rem]"
+          />
+        </div>
+        <div class="flex items-center justify-start h-full p-1 md:p-0 ">
+          <img src="./assets/logo/hamburger.svg" class="md:w-10 w-6" alt="">
+        </div>
+      </nav>
+
+      <header
+        class="  flex flex-col md:mt-6 mt-3 md:grid grid-cols-[3fr,2fr] gap-6 hero-section"
+      >
+        <div class="flex card  justify-between py-8  ">
+          <div class="flex flex-col gap-8 md:p-10 p-10 ">
+            <h1 class="head-h1 font-[ClashGrotesk-Regular]">Design Code & Develop</h1>
+            <h3 class="text-3xl pt-4 text-center  md:text-left text-gray-200 lg:pr-10 md:pr-40  head-h3">
+              The technical art of Problem Solving
+            </h3>
+            <div class="flex justify-center md:justify-start">
+              <button class="btn-primary lg:text-3xl text-xl text-bold md:px-8 px-4 md:py-4 py-2 rounded-md text-black">
+                Lets innovate together
+              </button>
+            </div>
+          </div>
+          <div class="  lg:flex justify-end w-full   hidden">
+            <img src="./assets/images/headerimg.png" alt="" class="object-fit" style="object-fit: contain; width: 100%; height: 100%;"/>
+          </div>
+        </div>
+        <div class="grid grid-rows-[2fr,1fr] w-full h-full gap-y-4">
+          <div class="card flex flex-col justify-end px-16  col-span-2">
+            <h2 class="text-center pb-4 text-4xl">Building a system</h2>
+            <h2 class="text-center pb-5 text-4xl">Since 2019</h2>
+            <img class="" src="./assets/images/Layer 13.png" alt="" />
+          </div>
+
+          <div class=" grid grid-cols-[1fr,1fr] gap-6">
+            <div class="flex flex-col  gap-4 card p-8  px-16 rounded-xl">
+              <img src="./assets/logo/global.svg" alt="" width="44" />
+              <div>
+                <p class="lg:text-6xl text-lg font-base">13+</p>
+                <p class="lg:text-3xl text-sm font-light text-gray-400">Countries</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4 card px-16 p-5 rounded-xl">
+              <img src="./assets/logo/3square.svg" alt="" width="44" />
+              <div>
+                <p class="lg:text-6xl text-lg font-base">400+</p>
+                <p class="lg:text-3xl text:sm font-light text-gray-400">Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us container mx-3 lg:w-11/12 card mx-auto mt-8 items-start md:p-14 p-4">
+      <div class="flex justify-between mt-3">
+        <div class="text-[.8rem] text-gray-200  flex gap-2 items-center">
+          <div class="dot"></div>
+          <p>ABOUT US</p>
+        </div>
+        <div class="">
+
+          <p class="md:text-[0.7rem] hidden md:block text-gray-300 text-[.6rem]">
+            ITS ALL ABOUT PEOPLE, WHO YOU ARE WITH
+          </p>
+        </div>
+      </div>
+      <div class=" grid md:grid-cols-[1fr,3fr] w-full md:gap-10 gap-5 md:pt-10 pt-2">
+      <div class="grid grid-rows-[3fr,2fr]">
+
+        <div
+          class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden md:flex"
+        >
+          <img
+            src="./assets/logo/arrow-down.svg"
+            alt=""
+            width="24"
+            class="arrow-down"
+          />
+    
+        </div>
+        <div class=""> <p class="text-gray-300 lg:w-[12rem] hidden md:block text-[.7rem] uppercase mt-4">
+          Tech pioneers forging global impact through passion and innovation
+        </p></div>
+      </div>
+          
+          <div class="grid grid-rows-[3fr,2fr]   ">
+            <div class="flex flex-col about-main md:text-[4.5rem] text-xl  head-h1 font-[ClashGrotesk-Regular] ">
+              <h1 class="h2-color md:text-[4.5rem] leading-[4rem] text-xl ">G</h1>
+              <div class="h2 text-white md:text-[4.5rem] leading-[4rem] text-xl">Passion-Driven Start</div>
+              <div class="h2 text-white md:text-[4.5rem] leading-[4rem] text-xl">from 2019</div>
+            </div>
+           <div class="">
+
+             <p class="text-gray-500 lg:pr-32 lg:text-2xl text-sm ">
+               Founded in 2019 by five friends driven by passion, our tech company
+               has rapidly evolved. We've expanded our innovative services to 13+
+               countries, successfully completing 400+ projects. From humble
+               beginnings to a global presence, we continue to shape the future
+               with cutting-edge solutions, creativity, and a commitment to
+               excellence.
+             </p>
+           </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- End About Us Section -->
+
+    <!-- What we do section -->
+    <section class="container mx-3 lg:w-11/12 card md:p-14 p-10 md:mt-8 mt-6 mx-auto items-center">
+  
+          <div class="grid md:grid-cols-[1fr,3fr] w-full gap-5 md:gap-10">
+
+            <div class="text-xs text-gray-200  flex gap-2 items-start">
+              <div class="mt-1 dot"></div>
+              <p>WHAT WE DO </p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex gap-3 ">
+                <button
+                  class="tab-button active-tab md:text-sm text-[0.7rem] font-medium  border border-gray-300 text-gray-200  md:px-4 py-1 px-2 md:py-2 rounded-full"
+                  onclick="showTab('webDevTab', this)"
+                >
+                  Technology
+                </button>
+                <button
+                class="tab-button  md:text-sm text-[0.7rem] font-medium border border-gray-300 text-gray-200  md:px-4 py-1 px-2 md:py-2 rounded-full"
+                onclick="showTab('appDevTab', this)"
+                >
+                  Experience Design
+                </button>
+                <button
+                class="tab-button  md:text-sm font-medium text-[0.7rem]  border border-gray-300 text-gray-200  md:px-4 py-1 px-2 md:py-2 rounded-full"
+                onclick="showTab('brandingTab', this)"
+                >
+                  Branding
+                </button>
+              </div>
+          </div>
+        
+        </div>
+        <div class="grid lg:grid-cols-[1fr,3fr] w-full md:gap-10 pt-10">
+
+          <div
+            class="md:w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex"
+          >
+            <img
+              src="./assets/logo/arrow-down.svg"
+              alt=""
+              width="24"
+              class="arrow-down"
+            />
+          </div>
+  
+            <div class="tab-content flex flex-col" id="webDevTab">
+              <div class="flex lg:gap-16">
+                <p class=" text-gray-400">01</p>
+                <div class="flex flex-col gap-8">
+                  <div class="flex md:gap-12 items-center">
+                    <h1 class="lg:text-7xl text-2xl text-light">Web Development</h1>
+                    <button class="border border-gray-300 rounded-full">
+                      <img
+                        src="./assets/logo/arrow-left.svg"
+                        alt=""
+                        class="arrow-left"
+                      />
+                    </button>
+                  </div>
+                  <ul
+                    class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2  lg:flex lg:gap-3 gap-1 overflow-y-scroll"
+                  >
+                    <li>• Web App Development</li>
+                    <li>• Ecommerce</li>
+                    <li>• Corporate websites</li>
+                    <li>• Custom CRM</li>
+                    <li>• Cusotom CMS</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+              ></div>
+  
+              <div class="flex gap-2 lg:gap-16">
+                <p class="pt-3 text-gray-400">02</p>
+                <div class="flex flex-col gap-8">
+                  <div class="flex gap-12 items-center">
+                    <h1 class="lg:text-7xl text-2xl text-light">Mobile app Development</h1>
+                    <button class="border border-gray-300 rounded-full">
+                      <img
+                        src="./assets/logo/arrow-left.svg"
+                        alt=""
+                        class="arrow-left"
+                      />
+                    </button>
+                  </div>
+                  <ul
+                    class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                  >
+                    <li>• Food delivery Application</li>
+                    <li>• Grocery Application</li>
+                    <li>• Taxi Booking Application</li>
+                    <li>• Listing Application</li>
+                                    </ul>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+              ></div>
+  
+              <div class="flex gap-2 lg:gap-16">
+                <p class="pt-3 text-gray-400">03</p>
+                <div class="flex flex-col gap-8">
+                  <div class="flex gap-12 items-center">
+                    <h1 class="lg:text-7xl text-2xl text-light">Ecommerce development</h1>
+                    <button class="border border-gray-300 rounded-full">
+                      <img
+                        src="./assets/logo/arrow-left.svg"
+                        alt=""
+                        class="arrow-left"
+                      />
+                    </button>
+                  </div>
+                  <ul
+                    class="md:text-xs text-[.6rem] text-gray-400 grid  grid-cols-2 lg:flex lg:gap-3 gap-1"
+                  >
+                    <li>• Fashion and Apparel</li>
+                    <li>• Electronics</li>
+                    <li>• Health and Beauty</li>
+                    <li>• Sports and Fitness</li>
+                    <li>• Digital Products</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+              ></div>
+  
+              <div class="flex gap-2 lg:gap-16">
+                <p class="pt-3 text-gray-400">04</p>
+                <div class="flex flex-col gap-8">
+                  <div class="flex gap-12 items-center">
+                    <h1 class="lg:text-7xl text-2xl text-light">Cloud Services</h1>
+                    <button class="border border-gray-300 rounded-full">
+                      <img
+                        src="./assets/logo/arrow-left.svg"
+                        alt=""
+                        class="arrow-left"
+                      />
+                    </button>
+                  </div>
+                  <ul
+                    class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                  >
+                    <li>• Cloud Consulting</li>
+                    <li>• Cloud Hosting</li>
+                    <li>• Cloud Migration</li>
+                    <li>• Database Services</li>
+                    <li>• Backup Configuration</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+              ></div>
+            </div>
+            <!-- Tab content 02 -->
+            <div class="tab-content flex flex-col" id="appDevTab" style="display: none">
+           
+                <div class="flex gap-2 lg:gap-16">
+                  <p class=" text-gray-400">01</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">UI/UX</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• UI</li>
+                      <li>• UX</li>
+                      <li>• Cross Platform Experience</li>
+                      <li>• UI?UX Consulting</li>
+                      <li>• Design System</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">02</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Website Design</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• Ecommerce website design</li>
+                      <li>• Corporate website design</li>
+                      <li>• Custon website design</li>
+                      <li>• website revamp</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">03</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Dashboards</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• learning Platform</li>
+                      <li>• CMS</li>
+                      <li>• Admin Panel</li>
+                      <li>• Design System</li>
+                      <li>• Web Application</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">04</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Ecommerce Experience</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• Ecommerce website design</li>
+                      <li>• Ecommerce application design</li>
+                      <li>• Ecommerce PWA</li>
+                      <li>• Ecommerce Revamp</li>                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+        
+            </div>
+            <!-- Tab Content 03 -->
+            <div class="tab-content flex flex-col " id="brandingTab" style="display: none">
+             
+                <div class="flex gap-2 lg:gap-16">
+                  <p class=" text-gray-400">01</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Brand Consulting</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                    <li>• Brand Strategy and Positioning</li>
+                    <li>• Brand Communication</li>
+                    <li>• Brand Revitalization</li>
+                    <li>• Market Research and Analysis</li>
+                    <li>• Brand Experience Optimization</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">02</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Brannd Identity</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                    <li>• Logo Design</li>
+                    <li>• Visual Style Developement</li>
+                    <li>• Typography Guides</li>
+                    <li>• Color Palette Definition</li>
+                    <li>• Iconography Creation</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">03</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Logo Design</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• Conceptual Logo Design</li>
+                      <li>• Minimalist Logo Design</li>
+                      <li>• Landmark Logo Design</li>
+                      <li>• Embeded Logo Design</li>
+                      <li>• Abstract Logo Design</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+    
+                <div class="flex gap-2 lg:gap-16">
+                  <p class="pt-3 text-gray-400">04</p>
+                  <div class="flex flex-col gap-8">
+                    <div class="flex gap-12 items-center">
+                      <h1 class="lg:text-7xl text-2xl text-light">Brand Collateral</h1>
+                      <button class="border border-gray-300 rounded-full">
+                        <img
+                          src="./assets/logo/arrow-left.svg"
+                          alt=""
+                          class="arrow-left"
+                        />
+                      </button>
+                    </div>
+                    <ul
+                      class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                    >
+                      <li>• Buisiness Card Design</li>
+                      <li>• Letterhead and Stationery</li>
+                      <li>• Brochure and Flyer Design</li>
+                      <li>• Packaging Design</li>
+                      <li>• Brand Guidlines Documentation</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+                ></div>
+                        </div>
+        </div>
+
+
+       
+    </section>
+ 
+    <!-- Ends What we do section -->
+
+    <section class=" lg:w-11/12 mx-auto container md:mt-8 mt-6  card md:p-14 p-6 mx-3">
+      <div class="flex justify-between  ">
+        <div class="text-[.7rem] text-gray-200   flex gap-2 items-center">
+                    <div class="dot"></div>
+          <p>CASE STUDIES</p>
+        </div>
+        <p class="md:text-xs text-gray-400 text-[.5rem] hidden md:block uppercase">
+          BY OUR creative  team</p>
+      </div>
+      <div class="grid lg:grid-cols-[1fr,3fr] pt-12">
+        <div
+          class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex"
+        >
+          <img
+            src="./assets/logo/arrow-down.svg"
+            alt=""
+            width="24"
+            class="arrow-down hidden lg:block"
+          />
+        </div>
+   <div class="lg:grid lg:grid-cols-2  ">
+
+     <div class="leading-[3.6rem] font-[ClashGrotesk-Regular]">
+       <h2 class="h2-color md:text-[4.7rem] text-[2rem] font-medium">Our Works</h2>
+       <h2 class="h2  md:text-[4.7rem] text-[2rem]">& Case Studies</h2>
+
+       <a
+         href="/works-and-casestudies.html"
+         class="lg:mt-8 mt-4 mx-1 mb-4 inline-block"
+       >
+         <div class="flex gap-2">
+           VIEW WORKS
+           <img src="./assets/logo/arrow-send.svg" alt="view" />
+         </div>
+         <div class="w-full border border-gray-300 "></div>
+       </a>
+     </div>
+     <div class="flex justify-center">
+       <p class="lg:text-xl text-sm lineheightmd lg:w-[24rem] text-gray-400">
+         Founded in 2019 by five friends driven by passion, our tech company
+         has rapidly evolved. We've expanded our innovative services to 13+
+         countries, successfully completing 400+ projects
+       </p>
+     </div>
+   </div>
+   </div>
+
+      <div class="flex gap-4 justify-center mt-12">
+        <div class="flex flex-col gap-4">
+          <img src="./assets/images/Rectangle 6.png" alt="image1" />
+          <div class="lg:px-5  flex flex-col  ">
+            <p class="lg:text-3xl md:text-md text-sm">Posh Heights Realty</p>
+            <p class="md:text-lg md:pt-1 text-[.6rem] text-gray-600">Portfolio Website</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <img src="./assets/images/Rectangle 7.png" alt="image1" />
+          <div class="lg:px-5 flex flex-col ">
+            <p class="lg:text-3xl text-sm md:text-md">Al Ras Sanitaryware</p>
+            <p class="md:text-lg md:pt-1 text-[.6rem] text-gray-600">Portfolio Website</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of  Case studies -->
+
+    <section class=" lg:w-11/12 container mx-auto my-6 md:py-10   card md:p-10 md:p-5 p-4">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./assets/logo/client-logo/VI.png" class="md:h-[2rem] h-[1.5rem]" alt="slide"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/DohaCollege.png" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/Allyou.png" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/VI.png" alt="" class="h-[2rem] h-[1.5rem]"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+    </section>
+
+     <!-- Footer Section Start Point -->
+
+    <div class="mx-auto py-10  bg-black  ">
+      <div class="swiper2">
+        <div class="swiper-wrapper font-6xl">
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-8xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class=" bg-white  md:pb-2 md:pt-6 pt-3 ">
+      <div class="text-xs md:text-[.6rem]  text-gray-600 mt-3 md:px-14 md:p-6 p-2 flex md:gap-2 items-center">
+        <div class="dot text-black md:bg-black "></div>
+        <p class="uppercase ">
+          Share your creative ideas with us and get back beautiful designs that
+          impress and engage.
+        </p>
+      </div>
+      <div class="flex gap-1 items-center md:px-14 p-4 md:py-14 py-6 md:gap-10 ">
+      <h1 class=" md:font-semibold md:text-[4.8rem] text-black flex  ">Lets Start a Project   </h1>
+      <img src="./assets/logo/icons8-arrow-upper-right-48.png" alt="" class=" md:w-16 w-5" />
+    
+      </div>
+      <hr class="mt-5 border-t border-gray-400">
+            <div class="flex justify-between md:pt-8 pt-4 md:px-14 px-6 pb-6">
+
+        <div class="">
+          <div class="text-black  text-[.6rem] md:text-[1.1rem] text-gray-600">Designed and Developed by <span class="text-gray-800 text-[.8rem] md:text-[1.3rem] font-medium"> Dreamers ❤️</span> </div>
+        </div>
+        <div class="">
+
+          <div class="flex md:gap-4 gap-1 text-black ">
+            <img class="md:w-6 w-3 " src="./assets/logo/brand-logo/whatsapp.svg"  alt="gg" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/instagram.svg" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/linkedin.png" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/behance.png" alt="" />
+            <img class="md:w-6 w-3" src="./assets/logo/brand-logo/dribble.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- swiper cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 5, // Number of slides per view (adjust as needed)
+        spaceBetween: 10, // Space between each slide
+        loop: true, // Enable looping
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper2", {
+        // Optional parameters
+        slidesPerView: 1, // Number of slides per view (adjust as needed)
+        spaceBetween: 20, // Space between each slide
+        loop: true, // Enable looping
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 0, // Delay between slides in milliseconds (adjust as needed)
+          disableOnInteraction: false, // Continue sliding even after user interaction
+        },
+
+        speed: 20000,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+
+    <script>
+      function showTab(tabId, button) {
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function (tab) {
+          tab.style.display = "none";
+        });
+
+        
+        var buttons = document.querySelectorAll(".tab-button");
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active-tab");
+        });
+
+        
+        document.getElementById(tabId).style.display = "flex";
+
+        
+        button.classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
