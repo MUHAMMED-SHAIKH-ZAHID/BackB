@@ -25,25 +25,37 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="mx-auto " >
-    <section class="container md:mt-6 mt-2 lg:w-11/12 mx-auto" >
-      <nav class="pt-4 pb-4 md:mx-auto mx-2 flex justify-between">
-        <div class="flex items-center p-2 md:p-0">
+  <body class=" " >
+    <section class="container md:mt-6 mt-2 w-11/12 mx-4 md:mx-auto" >
+      <nav class="pt-4 pb-4   flex  justify-between">
+        <div class="flex items-center p-2  md:p-0">
 
           <img
             src="./assets/logo/company-logo.svg"
             alt=""
-            class="md:w-[8rem] w-[5rem]"
+            class="md:w-[10rem] w-[5rem]"
           />
         </div>
-        <div class="flex items-center h-full p-2 md:p-0 ">
-          <img src="./assets/logo/hamburger.svg" class="md:w-10 w-6" alt="">
-        </div>
+        <button id="menuButton" class="z-20 focus:outline-none">
+          <img src="./assets/logo/hamburger.svg" alt="Menu" class="md:w-10 w-6" id="menuIcon">
+      </button>
       </nav>
+
+      <div id="menu" class="fixed top-0 right-0  h-full w-64 transform translate-x-full bg-black shadow-md z-10" style="transition: transform 0.3s ease;">
+        <ul class="md:pt-[8rem] pt-[5rem] font-[ClashGrotesk-Regular]">
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2 "><a href="/index.html" class="block text-gray-300 border-b pb-1">Home</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/individual_service-page.html" class="block text-gray-300 border-b pb-1">Service</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/brands.html" class="block text-gray-300 border-b pb-1">Brands</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/ecommerce.html" class="block text-gray-300 border-b pb-1">ECommerce</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/works-and-casestudies.html" class="block text-gray-300 border-b pb-1">Works</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/contact-us.html" class="block text-gray-300 border-b pb-1">Contact</a></li>
+        </ul>
+    </div>
+    
     </section>
 
     <section
-      class="container lg:w-11/12 mx-auto mt-10 flex flex-col gap-6 p-4 lg:p-0"
+      class="container w-11/12 mx-4 md:mx-auto md:mt-14 mt-6 flex flex-col gap-8 p-4 lg:p-0"
     >
     <div class="flex gap-2 items-center">
       <div class="dot"></div>
@@ -55,7 +67,7 @@
       <ul class="flex gap-2">
         <li></li>
           <button
-            class="tab-button active-tab text-lg font-semibold lg:px-8 lg:py-2 lg px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            class="tab-button active-tab md:text-2xl text-sm font-medium lg:px-8 lg:py-2 lg px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
             onclick="showTab('singlePage', this)"
           >
             Single Page
@@ -63,7 +75,7 @@
         </li>
         <li class="">
           <button
-            class="tab-button text-lg font-semibold  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            class="tab-button text-sm md:text-2xl font-medium  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
             onclick="showTab('foodDeliverey', this)"
           >
             Food Delivery
@@ -71,7 +83,7 @@
         </li>
         <li class="">
           <button
-            class="tab-button text-lg font-semibold lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            class="tab-button text-sm md:text-2xl font-medium lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
             onclick="showTab('portfolio', this)"
           >
             Portfolio
@@ -79,7 +91,7 @@
         </li>
         <li class=" ">
           <button
-            class="tab-button text-lg font-semibold  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            class="tab-button text-sm md:text-2xl font-medium  lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
             onclick="showTab('ecommerce', this)"
           >
             Ecommerce
@@ -90,28 +102,28 @@
 
     <div class="tab-content flex flex-col" id="singlePage">
       <section
-        class="lg:grid grid-cols-[3fr,2fr] lg:w-11/12 container md:mx-auto mx-2   lg:mt-16 items-center p-3 lg:p-0"
+        class="lg:grid grid-cols-[3fr,2fr] lg:w-11/12 container md:mx-auto mx-4   lg:mt-10 items-center p-3 lg:p-0"
       >
-        <div class="  justify-end h-full items-end  grid  ">
-          <div class="leading-[4rem] font-[ClashGrotesk-Regular]">
+        <div class="  md:justify-end h-full items-end  grid  ">
+          <div class="md:leading-[5rem] leading-[2.5rem] font-[ClashGrotesk-Regular]">
 
-            <div class="h2-color text-[2rem] md:text-[4.8rem] flex">Innovation Unleashed</div>
-            <div class="text-[2rem] md:text-[4.8rem] font-medium"> Showcasing our work and stories</div>
+            <div class="h2-color text-[2.5rem] md:text-[5.3rem] flex">Innovation Unleashed</div>
+            <div class="text-[2.5rem] md:text-[5.3rem] "> Showcasing our work and stories</div>
           </div>
         </div>
 
-        <div class="flex flex-col lg:pl-10 mt-10 md:mt-10  gap-4 md:w-[30rem]">
-          <p class="lg:text-lg text-sm text-gray-400 ">
+        <div class="flex flex-col lg:pl-10 mt-4 md:mt-6 md:gap-6 gap-4 md:w-[35rem]">
+          <p class="lg:text-[1.3rem] md:leading-[1.6rem] text-sm text-gray-400 ">
             Founded in 2019 by five friends driven by passion, our tech company
             has rapidly evolved. We've expanded our innovative services to 13+
             countries, successfully completing 400+ projects.
           </p>
 
-          <p class="text-md text-gray-400">
+          <p class="text-md md:text-[1.3rem] text-gray-400">
             Time Frame: 3 to 5 months 
           </p>
-          <p class="text-md text-gray-400">Cost: 50k - 300k</p>
-          <div class="flex gap-8 items-center cursor-pointer mt-4">
+          <p class="text-md md:text-[1.3rem] text-gray-400">Cost: 50k - 300k</p>
+          <div class="flex gap-8 items-center font-semibold text-md md:text-[1.3rem] cursor-pointer mt-4">
             <p>VIEW OUR SAMPLES</p>
             <div class="w-20 border border-gray-200"></div>
           </div>
@@ -122,13 +134,13 @@
 
       </div>
       <section
-        class="container lg:w-11/12 md:mx-auto mx-2  rounded-full mdmt-12 p-4 lg:p-0"
+        class="container lg:w-11/12 md:mx-auto mx-4 w-full rounded-full md:mt-14  lg:p-0"
       >
-        <img src="./assets/images/img1.png" alt="" class="w-full" />
+        <img src="./assets/images/img1.png" alt="" class="w-[25rem] sm:w-full" />
       </section>
-      <div class="card lg:w-11/12 md:mx-auto mx-2  mt-12 p-4 md:p-10">
-        <div class="flex justify-between md:mt-3 mt-5">
-          <div class="text-[.8rem] md:text-xs text-gray-400 pl-5 md:pl-0   flex gap-2 items-center">
+      <div class="card container w-11/12 md:mx-auto mx-4  mt-12 p-4 md:p-10">
+        <div class="flex justify-between md:mt-3 md:px-10 px-2 mt-10">
+          <div class="text-[.6rem] md:text-[.8rem] text-gray-300  md:pl-0   flex gap-2 items-center">
             <div class="dot"></div>
             <p>WORKS</p>
           </div>
@@ -139,15 +151,15 @@
             </p>
           </div>
         </div>
-        <section class="lg:container md:px-10 px-2 ">
+        <section class="lg:container  md:px-10 px-2 ">
 
           <div class="lg:grid grid-cols-2 md:mt-12 mt-5 px-2">
             <div class="grid h-full items-end ">
 
               <div class="h2-color md:text-[5.5rem] text-[3rem] font-[ClashGrotesk-Regular]">Our Works</div>
             </div>
-            <div class="flex flex-col items-end  md:w-[36rem] md:pl-8 ">
-              <div class="text-gray-400 md:text-xl md:text-[5rem] text-[1rem]   leading-[1.5rem]  ">
+            <div class="flex flex-col items-end  md:w-[40rem] md:pl-8 ">
+              <div class="text-gray-400  md:text-[1.5rem] text-[1rem]   leading-[1.7rem]  ">
                 Founded in 2019 by five friends driven by passion, our tech company
                 has rapidly evolved. We've expanded our innovative services to 13+
                 countries, successfully completing 400+ projects.
@@ -167,7 +179,7 @@
               alt=""
               class="w-full object-cover"
               />
-            <div class="px-6 py-10">
+            <div class="md:px-6 px-4 py-2 md:py-10">
               <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
   
               <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
@@ -179,8 +191,8 @@
             alt=""
             class="w-full object-cover"
           />
-           <div class="px-6 py-10">
-              <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
+          <div class="md:px-6 px-4 py-2 md:py-10">
+            <div class="font-base md:text-3xl text-xl mb-1 tracking-wide text-gray-300">Posh Heights Realty</div>
   
               <p class="text-gray-600 text-lg text-light">Portfolio Website.</p>
             </div>
@@ -233,7 +245,7 @@
     </div>
 
     <!-- Footer -->
-    <section class=" lg:w-11/12 container mx-auto my-6 md:py-10   card md:p-10 md:p-5 p-4">
+    <section class=" w-11/12 container mx-4 md:mx-auto my-6 md:py-10   card md:p-10 md:p-5 p-4">
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -391,6 +403,42 @@
 
         button.classList.add("active-tab");
       }
+        //hamburger
+     
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    let isMenuOpen = false;
+
+    function openMenu() {
+        menu.style.transform = 'translateX(0%)';
+        menuIcon.src = './assets/logo/close.svg';
+        isMenuOpen = true; 
+    }
+
+    function closeMenu() {
+        menu.style.transform = 'translateX(100%)';
+        menuIcon.src = './assets/logo/hamburger.svg';
+        isMenuOpen = false; 
+    }
+
+    menuButton.addEventListener('click', function () {
+        if (isMenuOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            closeMenu();
+        }
+    });
+});
+
     </script>
   </body>
 </html>

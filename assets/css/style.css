@@ -105,7 +105,7 @@ section {
     #36aeff 57.13%,
     #3683ff 158.48%
   );
-  font-size: 95px;
+  font-size: 98px;
   font-weight: 500;
   background-clip: text;
   color: transparent;
@@ -285,11 +285,13 @@ section {
  /* Custom Scroll Bar */
 
 ::-webkit-scrollbar {
-  width: 8px;
+  display: none;
+
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -300,3 +302,5 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+

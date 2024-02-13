@@ -14,52 +14,64 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body class="mx-auto">
-    <section class="container lg:w-11/12 mx-auto">
-      <nav class="pt-4 pb-4 md:mx-auto mx-2 mt-2 md:mt-6 flex justify-between">
-        <div class="flex items-center p-2 md:p-0">
+  <body class="mx-aut">
+    <section class="container md:mt-6 mt-2 w-11/12 mx-4 md:mx-auto">
+      <nav class="pt-4 pb-4   flex  justify-between">
+        <div class="flex items-center p-2  md:p-0">
 
           <img
             src="./assets/logo/company-logo.svg"
             alt=""
-            class="md:w-[8rem] w-[5rem]"
+            class="md:w-[10rem] w-[5rem]"
           />
         </div>
-        <div class="flex items-center h-full p-2 md:p-0 ">
-          <img src="./assets/logo/hamburger.svg" class="md:w-10 w-6" alt="">
-        </div>
+        <button id="menuButton" class="z-20 focus:outline-none">
+          <img src="./assets/logo/hamburger.svg" alt="Menu" class="md:w-10 w-6" id="menuIcon">
+      </button>
       </nav>
+
+      <div id="menu" class="fixed top-0 right-0  h-full w-64 transform translate-x-full bg-black shadow-md z-10" style="transition: transform 0.3s ease;">
+        <ul class="md:pt-[8rem] pt-[5rem] font-[ClashGrotesk-Regular]">
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2 "><a href="/index.html" class="block text-gray-300 border-b pb-1">Home</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/individual_service-page.html" class="block text-gray-300 border-b pb-1">Service</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/brands.html" class="block text-gray-300 border-b pb-1">Brands</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/ecommerce.html" class="block text-gray-300 border-b pb-1">ECommerce</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/works-and-casestudies.html" class="block text-gray-300 border-b pb-1">Works</a></li>
+            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/contact-us.html" class="block text-gray-300 border-b pb-1">Contact</a></li>
+        </ul>
+    </div>
+    
     </section>
 
-    <section class="container pt-8 mb-10 lg:w-11/12 mx-auto">
-      <div class="p-4 lg:p-0">
+    <section class="container md:pt-10 pt-4  w-11/12 mx-4 md:mx-auto">
+      <div class="md:p-4 p-2 lg:p-0">
         <div class="md:text-[.8rem] text-[.6rem] text-gray-400  flex gap-2 items-center">
           <div class="dot"></div>
           <div class="">WORKS & CASE STUDIES / <SPAN class="text-gray-200">POSH HEIGHTLIGHTS</SPAN></div>
         </div>
-        <div class="lg:grid items-center grid-cols-[3fr,2fr] pt-10">
-          <div class="flex flex-col max-w-[36rem] lg:gap-9 gap-4 lg:mb-0 mb-5">
-            <h2 class="text-[2.3rem] ">Posh Heights</h2>
-            <p class="md:text-[1.3rem] text-[.8rem] leading-[1.5rem]  text-md text-gray-300">
+        <div class="lg:grid items-center grid-cols-[5fr,4fr] pt-10">
+          <div class="flex flex-col max-w-[38rem] lg:gap-9 gap-4 lg:mb-0 mb-5">
+            <h2 class="md:text-[2.8rem] ">Posh Heights</h2>
+            <p class="md:text-[1.4rem] text-[.8rem] leading-[1.5rem]  text-md text-gray-500">
               Founded in 2019 by five friends driven by passion, our tech
               company has rapidly evolved. We've expanded our innovative
               services to 13+ countries, successfully completing 400+ projects.
     
             </p>
-            <ul class="md:text-[1.2rem] text-[.8rem] leading-[1.6rem] text-gray-300">
+            <ul class="md:text-[1.3rem] text-[.8rem] leading-[1.8rem] font-light text-gray-300">
               <li>Work: Branding</li>
               <li>Year: 2019</li>
               <li>Region: UAE</li>
             </ul>
           </div>
-          <div class="mt-10">
-            <img src="./assets/images/poshheights.png" alt="w-full object-contain" />
+          <div class="mt-10   h-full">
+            <img src="./assets/images/poshheights.png" alt="" class="w-full object-cover" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container lg:w-11/12 mx-auto p-4 lg:p-0">
+    <section class=" md:mt-16 mt-6  w-11/12 mx-4 md:mx-auto md:p-4 lg:p-0">
       <img
         src="./assets/images/Embossed_Logo_Mockup_on_Dark_Paper_05 copy.png"
         alt=""
@@ -67,13 +79,13 @@
       />
     </section>
 
-    <section class="md:grid grid-cols-[1fr,2fr] gap-4 container lg:w-11/12 mx-auto p-4 lg:p-0">
+    <section class="md:grid grid-cols-[1fr,2fr] md:mt-6 mt-2 md:gap-4 gap-1 container w-11/12 mx-4 md:mx-auto md:p-4 lg:p-0">
       <img src="./assets/images/Frame 3.png" alt="" class="w-full" />
 
       <img src="./assets/images/Frame 5.png" alt="" class="w-full" />
     </section>
 
-    <section class="container lg:w-11/12 mx-auto p-4 lg:p-0">
+    <section class="container w-11/12 md:mt-6 mx-2 md:mx-auto md:p-4 lg:p-0">
       <img
         src="./assets/images/Frame 1.png"
         alt=""
@@ -82,12 +94,12 @@
       />
     </section>
 
-    <section class="grid grid-cols-[3fr,2fr] gap-4 container lg:w-11/12 mx-auto p-4 lg:p-0">
+    <section class="grid grid-cols-[3fr,2fr] gap-4 md:mt-6   container w-11/12 mx-4 md:mx-auto md:p-4 lg:p-0">
       <img src="./assets/images/Frame 1 (1).png" alt="" class="w-full" />
       <img src="./assets/images/166 copy.png" alt="" class="w-full" />
     </section>
 
-    <section class="container lg:w-11/12 mx-auto p-4 lg:p-0">
+    <section class="container w-11/12 md:mt-6 mx-2 md:mx-auto md:p-4 lg:p-0">
       <img src="./assets/images/matte vc black 1.png" alt="" class="w-full" />
     </section>
         <!-- Footer Section Start Point -->
@@ -200,6 +212,43 @@
               el: ".swiper-scrollbar",
             },
           });
+            //hamburger
+         //hamburger
+     
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    let isMenuOpen = false;
+
+    function openMenu() {
+        menu.style.transform = 'translateX(0%)';
+        menuIcon.src = './assets/logo/close.svg';
+        isMenuOpen = true; 
+    }
+
+    function closeMenu() {
+        menu.style.transform = 'translateX(100%)';
+        menuIcon.src = './assets/logo/hamburger.svg';
+        isMenuOpen = false; 
+    }
+
+    menuButton.addEventListener('click', function () {
+        if (isMenuOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            closeMenu();
+        }
+    });
+});
+
         </script>
     
   </body>
